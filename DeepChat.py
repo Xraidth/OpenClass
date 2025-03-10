@@ -35,3 +35,6 @@ while True:
 
     # Agrega la respuesta del modelo al historial
     messages.append({"role": "assistant", "content": response})
+
+
+

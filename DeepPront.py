@@ -10,7 +10,7 @@ def prontCreator():
 
 
 client = OpenAI(
-    api_key = os.getenv("OPENAI_API_KEY"),  
+   api_key = os.getenv("OPENAI_API_KEY"),  
     base_url="https://openrouter.ai/api/v1"  
 )
 
@@ -32,3 +32,6 @@ if chat.choices and chat.choices[0].message.content:
     print("Respuesta del modelo:", chat.choices[0].message.content)
 else:
     print("La respuesta no contiene contenido o está vacía.")
+
+
+
